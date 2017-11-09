@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_compare1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_compare1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/photo_apartment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Title"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/title_compare1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tipe Sewa"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/tipesewa_compare1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tipe Properti"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/tipe_property_compare1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Harga"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/harga_compare1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Ukuran Unit"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/ukuran_compare1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                 />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Fasilitas"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/fasilitas_compare1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Fasilitas lainnya"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/fasilitas_laiinyya_compare1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_compare2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_compare2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/photo_apartment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Title"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/title_compare2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tipe Sewa"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/tipesewa_compare2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tipe Properti"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/tipe_property_compare2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Harga"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/harga_compare2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Ukuran Unit"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/ukuran_compare2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Fasilitas"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/fasilitas_compare2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Fasilitas lainnya "
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/fasilitas_lainnya_compare2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </TableRow>
+
+</ScrollView>

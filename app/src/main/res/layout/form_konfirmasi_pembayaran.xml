@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="9dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:text="Konfirmasi Pembayaran"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_konfirmasi_order_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_konfirmasi_orderid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Order Id"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_konfirmasi_norek"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_konfirmasi_no_rek"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="No Rekening"
+                                android:inputType="number"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_konfirmasi_nama_pemilik"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_konfirmasi_nama_pemilik"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Nama Pemilik Rekening"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_konfirmasi_jumlah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_konfirmasi_jumlah"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:inputType="number"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Jumlah yang ditransfer"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spin_dari_bank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"></android.support.v7.widget.AppCompatSpinner>
+                    </TableRow>
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_erorr_daribank"
+                        android:visibility="gone"
+                        android:text="Asal bank mohon dipilih"
+                        android:textAppearance="@style/TextAppearance.Design.Error"
+                        />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spin_ke_bank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"></android.support.v7.widget.AppCompatSpinner>
+                    </TableRow>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_erorr_kebank"
+                        android:visibility="gone"
+                        android:text="Tujuan bank mohon dipilih"
+                        android:textAppearance="@style/TextAppearance.Design.Error"
+                        />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_konfirmasi_tanggal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_konfirmasi_tanggal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:inputType="none"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Tanggal Transfer"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_konfirmasi_jam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_konfirmasi_jam"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Jam Transfer"
+                                android:inputType="none"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_bukti_trf"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_file_upload_black_24dp">
+                        </ImageView>
+
+
+                    </TableRow>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_erorr_imgbukti"
+                        android:visibility="gone"
+                        android:text="Upload bukti pembayaran"
+                        android:textAppearance="@style/TextAppearance.Design.Error"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_select_buktitrf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Select Image"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_send_konfirmasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi"
+        android:layout_gravity="bottom"
+        android:textColor="#ffffff" />
+</LinearLayout>

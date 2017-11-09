@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/sv_new_property"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Properti Baru"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="20dp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_create_black_24dp">-->
+                        <!--></ImageView>-->
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_new_judul"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12px">
+
+                            <EditText
+                                android:id="@+id/et_judul"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Judul (Wajib)"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_create_black_24dp">-->
+                        <!--></ImageView>-->
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_new_deskripsi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12px">
+
+                            <EditText
+                                android:id="@+id/et_deskripsi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Deskripsi"
+                                android:inputType="textMultiLine"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:id="@+id/tv_err_Property"
+                        android:text="Tipe properti wajib dipilih! "
+                        android:visibility="gone"
+                        android:textAppearance="@style/TextAppearance.Design.Error"
+                        />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_create_black_24dp">-->
+                        <!--></ImageView>-->
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spin_new_type_property"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"></android.support.v7.widget.AppCompatSpinner>
+
+                    </TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="22dp"
+                        android:id="@+id/tv_err_RentType"
+                        android:text="Tipe sewa wajib dipilih! "
+                        android:visibility="gone"
+                        android:textAppearance="@style/TextAppearance.Design.Error"
+                        />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_create_black_24dp">-->
+                        <!--></ImageView>-->
+
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spin_new_rent_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"></android.support.v7.widget.AppCompatSpinner>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_create_black_24dp">-->
+                        <!--></ImageView>-->
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_new_harga"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12px">
+
+                            <EditText
+                                android:id="@+id/et_harga"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Harga (Wajib)"
+                                android:inputType="number"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_create_black_24dp">-->
+                        <!--></ImageView>-->
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_new_ukuran"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12px">
+
+                            <EditText
+                                android:id="@+id/et_ukuran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Ukuran (Wajib)"
+                                android:inputType="number"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="5dp"
+                        android:text="Alamat"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                        android:textSize="20dp" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_create_black_24dp">-->
+                        <!--></ImageView>-->
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_new_alamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12px">
+
+                            <EditText
+                                android:id="@+id/et_new_alamat"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Alamat"
+                                android:inputType="textMultiLine"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_create_black_24dp">-->
+                        <!--></ImageView>-->
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_new_kota"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12px">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/et_new_kota"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Kota"
+                                android:inputType="textMultiLine"
+                                android:textSize="15dp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </TableRow>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="5dp"
+                        android:text="Atur Lokasi Di Google Map"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="20dp" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_create_black_24dp">-->
+                        <!--></ImageView>-->
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_new_latitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12px">
+
+                            <EditText
+                                android:id="@+id/et_new_latitude"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Latitude"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center">
+
+                        <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginRight="10dp"-->
+                        <!--android:src="@drawable/ic_create_black_24dp">-->
+                        <!--></ImageView>-->
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_new_longitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12px">
+
+                            <EditText
+                                android:id="@+id/et_new_longitude"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Longitude"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_open_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tampilkan Map"
+                        android:textColor="@color/colorAccent"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="5dp"
+                        android:text="Fasilitas Properti"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="20dp" />
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_new_fasil_dalam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_new_cb1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"></LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_new_cb2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"></LinearLayout>
+                    </TableRow>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="5dp"
+                        android:text="Fasilitas Lainnya"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="20dp" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_new_fasil_lainnya"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"></LinearLayout>
+                    </TableRow>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_margin="5dp"
+                        android:text="Galeri"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                        android:textSize="20dp" />
+
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_add_galerry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="10dp"
+                        android:text="Add+"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/tv_error_galery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Galery minimal 1 foto!"
+                        android:textAppearance="@style/TextAppearance.Design.Error"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_galery"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:layout_margin="5dp"
+                        android:background="#ffffff"
+                        android:elevation="8dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_galery"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"></android.support.v7.widget.RecyclerView>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#ffffff"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_search_api_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12px"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_search_api_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoText="false"
+                    android:background="@drawable/abc_textfield_search_material"
+                    android:hint="Cari lokasi"
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_search_api_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="2"
+                android:text="Cari"
+                android:textColor="#ffffff" />
+
+        </TableRow>
+
+        <fragment
+            android:id="@+id/map4"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_set_location"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Atur Lokasi"
+                android:textColor="#ffffff" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_cancelmap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="#ffffff" />
+        </TableRow>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_create"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:text="Create"
+        android:textColor="#ffffff" />
+</LinearLayout>

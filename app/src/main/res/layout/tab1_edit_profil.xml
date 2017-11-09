@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp">
+
+                <!--card_view:cardBackgroundColor="#FFB266"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Profile"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <TextView
+                        android:id="@+id/tv_status_verfikasi_ktp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:textSize="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/tv_status_verfikasi_hp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text=""
+                        android:textSize="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorAccent"/>
+
+                    <com.mikhaellopez.circularimageview.CircularImageView
+                        android:id="@+id/img_change_picture"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_account">
+
+                    </com.mikhaellopez.circularimageview.CircularImageView>
+
+
+                    <TextView
+                        android:id="@+id/tv_change_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Change picture"
+                        android:textColor="@color/colorAccent" />
+
+
+
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_face_black_24dp">
+                            ></ImageView>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_edit_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/et_edit_firstname"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="First Name"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_edit_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/et_edit_lastname"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Last Name"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_wc_black_24dp">
+                            ></ImageView>
+
+
+                        <RadioGroup
+                            android:id="@+id/rg_edit_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_edit_sex1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Male"></RadioButton>
+
+                            <RadioButton
+                                android:id="@+id/rb_edit_sex2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="Female">
+
+                            </RadioButton>
+
+                            <TextView
+                                android:id="@+id/tv_msg_error_edit_rg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Select item"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:visibility="gone"></TextView>
+                        </RadioGroup>
+
+                    </TableRow>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp">
+
+                <!--card_view:cardBackgroundColor="#FFB266"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Kontak"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"
+                        android:textColor="@android:color/darker_gray"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_mail_black_24dp">
+                            ></ImageView>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_edit_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_edit_email"
+                                android:layout_width="match_parent"
+
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Email"
+                                android:inputType="textEmailAddress"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ic_phone_android_black_24dp">
+                            ></ImageView>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_edit_phone_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/et_edit_phone_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Phone Number"
+                                android:inputType="number"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/btn_popup_verifikasi"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:text="Verifikasi"
+                            android:textColor="#ffffff"
+                            android:visibility="gone"/>
+                    </TableRow>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="#ffffff"
+                card_view:cardCornerRadius="0dp"
+                card_view:cardElevation="5dp">
+
+                <!--card_view:cardBackgroundColor="#FFB266"-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Tentang Saya"
+                        android:textColor="@android:color/darker_gray"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_edit_about_me"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_edit_about_me"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="About Me"
+                                android:inputType="textMultiLine"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_edit_fb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_edit_fb"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Facebook"
+                                android:inputType="text"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_twitter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_edit_twitter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Twitter"
+                                android:inputType="text"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_linked"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_edit_linked"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Linked In"
+                                android:inputType="text"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_google"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/et_edit_google"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:autoText="false"
+                                android:background="@drawable/abc_textfield_search_material"
+                                android:hint="Google"
+                                android:inputType="text"
+                                android:textSize="15dp" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_edit_profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="12dp"
+        android:text="Save"
+        android:textColor="#ffffff" />
+
+
+</LinearLayout>

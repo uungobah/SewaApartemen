@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">JagoSewa.com</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+
+    <!-- Error form message -->
+    <string name="err_msg_location">Enter your location</string>
+    <string name="err_msg_rent_type">Choose rent type</string>
+    <string name="err_msg_jumlah_kamar">Enter number of bedroom</string>
+    <string name="err_msg_harga_min">Enter the min price</string>
+    <string name="err_msg_harga_max">Enter thr max price</string>
+    <string name="err_msg_username">Enter your username</string>
+    <string name="err_msg_password">Enter your password</string>
+    <string name="err_msg_newpassword">Enter your new password</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_firstname">Enter your first name</string>
+    <string name="err_msg_lastname">Enter your last name</string>
+    <string name="err_msg_phone_number">Enter your phone number</string>
+    <string name="err_msg_addres">Enter your address</string>
+    <string name="title_activity_search_by_maps">Map</string>
+    <string name="id_comp1"></string>
+    <string name="id_comp2"></string>
+
+    <string name="screen1_title">Unlimited Calls For You</string>
+    <string name="screen1_desc">Call your friends, family, Relatives free of cost anytime anywhere.</string>
+    <string name="screen2_title">Group Conversations</string>
+    <string name="screen2_desc">Create your own own group and share Photos, Videos etc. </string>
+    <string name="screen3_title">Synchronize with your laptop</string>
+    <string name="screen3_desc">Get notified with your calls and messages to your laptop</string>
+
+    <array name="menu_management">
+        <item></item>
+        <item>Edit</item>
+        <item>Non Aktif</item>
+    </array>
+
+    <array name="menu_permintaan">
+        <item></item>
+        <item>Terima</item>
+        <item>Tolak</item>
+    </array>
+
+</resources>

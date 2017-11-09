@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home" android:icon="@drawable/ic_home_black_24dp"
+            android:title="Beranda" />
+        <item android:id="@+id/nav_edit_profile" android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Ubah Profil" />
+
+        <item android:id="@+id/nav_message" android:icon="@drawable/ic_mail_black_24dp"
+            android:title="Pesan" />
+
+        <item android:id="@+id/nav_new_apartment" android:icon="@drawable/ic_create_black_24dp"
+            android:title="Tambah Properti" />
+        <item android:id="@+id/nav_list_apartment" android:icon="@drawable/ic_location_city_black_24dp"
+            android:title="Daftar Properti" />
+        <item android:id="@+id/nav_location" android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Cari Berdasarkan Lokasi" />
+        <item android:id="@+id/nav_permintaan" android:icon="@drawable/ic_file_download_black_24dp"
+            android:title="Permintaan Sewa" />
+        <item android:id="@+id/nav_pengajuan" android:icon="@drawable/ic_file_upload_black_24dp"
+            android:title="Pengajuan Sewa" />
+        <item android:id="@+id/nav_verifikasi" android:icon="@drawable/ic_verified_user_black_24dp"
+            android:title="Verifikasi" />
+      <!--  <item android:id="@+id/nav_location" android:icon="@android:drawable/ic_menu_manage"
+            android:title="Tools" /> -->
+    </group>
+
+    <item android:title="Lainnya">
+        <menu>
+            <item android:id="@+id/nav_inorout" android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Keluar" />
+            <item android:id="@+id/nav_help" android:icon="@drawable/ic_info_black_24dp"
+                android:title="Bantuan Pengguna" />
+            <!--  <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
+                  android:title="Send" />-->
+        </menu>
+    </item>
+
+</menu>

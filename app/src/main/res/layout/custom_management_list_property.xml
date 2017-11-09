@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="1dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <FrameLayout android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_manage_apartment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ffffff"
+                    android:scaleType="fitXY"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    ></ImageView>
+
+
+                <TextView
+                    android:id="@+id/tv_manage_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray"
+                    android:text="Status"
+                    android:textAlignment="center"
+                    android:layout_weight="4"
+                    android:textColor="@color/colorAccent"></TextView>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/tv_manage_judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:id="@+id/tv_manage_tipesewa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:id="@+id/tv_manage_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <TextView
+
+                    android:id="@+id/tv_manage_status_reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15dp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textAppearance="@style/TextAppearance.Design.Error" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_manage_aktif"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:text=""
+                        android:textSize="12dp"
+                        android:layout_weight="1"
+                        android:textColor="#ffffff"
+                        />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_manage_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Edit"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:textColor="#ffffff" />
+                </TableRow>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_manage_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:text="Detail"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"/>
+
+                <!--  <android.support.v7.widget.AppCompatSpinner
+                      android:id="@+id/spin_manage_action"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/ic_settings_black_24dp"
+
+                      >
+
+                  </android.support.v7.widget.AppCompatSpinner> -->
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

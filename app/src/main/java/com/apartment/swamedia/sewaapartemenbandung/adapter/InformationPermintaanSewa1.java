@@ -1,0 +1,20 @@
+package com.apartment.swamedia.sewaapartemenbandung.adapter;
+
+import android.graphics.Bitmap;
+
+/**
+ * Created by Nurul Akbar on 20/11/2015.
+ */
+public class InformationPermintaanSewa1 {
+    public String id;
+    public String idUser;
+    public String judul;
+    public String tanggalpengajuan;
+    public String penyewa;
+    public String tanggalawal;
+    public String tanggalakhir;
+    public String img;
+    public String no_order;
+    public String durasi;
+    public String total_harga;
+}
